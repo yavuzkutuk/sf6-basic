@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f6a4faf3226fb69c514f5f0e91cec983",
+    "content-hash": "c599313cef9debc78a15b53f29f920b8",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -3877,6 +3877,68 @@
             "time": "2022-05-27T06:30:26+00:00"
         },
         {
+            "name": "symfony/google-mailer",
+            "version": "6.2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/google-mailer.git",
+                "reference": "34cc38a23fa7641f8750b056aee3f054be3380c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/google-mailer/zipball/34cc38a23fa7641f8750b056aee3f054be3380c4",
+                "reference": "34cc38a23fa7641f8750b056aee3f054be3380c4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/mailer": "^5.4|^6.0"
+            },
+            "type": "symfony-mailer-bridge",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Mailer\\Bridge\\Google\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Google Mailer Bridge",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/google-mailer/tree/v6.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-04-12T16:22:53+00:00"
+        },
+        {
             "name": "symfony/http-client",
             "version": "6.2.x-dev",
             "source": {
@@ -4309,12 +4371,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mailer.git",
-                "reference": "bc4338d7729aafaaac8559e1a4680ee97b8bfedb"
+                "reference": "db6a19a5c896139901c2de59fc9849379e0ff3b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mailer/zipball/bc4338d7729aafaaac8559e1a4680ee97b8bfedb",
-                "reference": "bc4338d7729aafaaac8559e1a4680ee97b8bfedb",
+                "url": "https://api.github.com/repos/symfony/mailer/zipball/db6a19a5c896139901c2de59fc9849379e0ff3b6",
+                "reference": "db6a19a5c896139901c2de59fc9849379e0ff3b6",
                 "shasum": ""
             },
             "require": {
@@ -4359,7 +4421,7 @@
             "description": "Helps sending emails",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/mailer/tree/v6.1.0"
+                "source": "https://github.com/symfony/mailer/tree/6.1"
             },
             "funding": [
                 {
@@ -4375,7 +4437,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-27T17:11:01+00:00"
+            "time": "2022-06-06T19:15:01+00:00"
         },
         {
             "name": "symfony/messenger",
@@ -5810,12 +5872,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-bundle.git",
-                "reference": "8c4e4b13973d9d246ef38a455f70006e5897ff92"
+                "reference": "88e6a491c1dfdf30dacb0a881fd7f5775f2151f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/8c4e4b13973d9d246ef38a455f70006e5897ff92",
-                "reference": "8c4e4b13973d9d246ef38a455f70006e5897ff92",
+                "url": "https://api.github.com/repos/symfony/security-bundle/zipball/88e6a491c1dfdf30dacb0a881fd7f5775f2151f1",
+                "reference": "88e6a491c1dfdf30dacb0a881fd7f5775f2151f1",
                 "shasum": ""
             },
             "require": {
@@ -5830,7 +5892,7 @@
                 "symfony/password-hasher": "^5.4|^6.0",
                 "symfony/security-core": "^5.4|^6.0",
                 "symfony/security-csrf": "^5.4|^6.0",
-                "symfony/security-http": "^5.4|^6.0"
+                "symfony/security-http": "^6.2"
             },
             "conflict": {
                 "symfony/browser-kit": "<5.4",
@@ -5886,7 +5948,7 @@
             "description": "Provides a tight integration of the Security component into the Symfony full-stack framework",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/security-bundle/tree/v6.1.0"
+                "source": "https://github.com/symfony/security-bundle/tree/6.2"
             },
             "funding": [
                 {
@@ -5902,7 +5964,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-23T10:32:57+00:00"
+            "time": "2022-06-06T15:37:59+00:00"
         },
         {
             "name": "symfony/security-core",

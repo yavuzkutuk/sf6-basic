@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller;
+namespace App\Admin\Controller;
 
 use App\Entity\Category;
 use App\Form\CategoryType;
@@ -9,8 +9,11 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Repository\CategoryRepository;
 use Symfony\Component\HttpFoundation\Request;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
+
 
 #[Route('/category', name: 'category_')]
+#[IsGranted('ROLE_ADMIN')]
 class CategoryController extends AbstractController
 {
     #[Route('/', name: 'index')]
