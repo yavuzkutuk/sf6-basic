@@ -20,6 +20,13 @@
 		{% endblock %}
 
 		{% block javascripts %}
+			<script>
+
+				setTimeout(() => {
+let message = document.querySelector('.uk-alert');
+message.remove();
+}, "3000");
+			</script>
 			{{ encore_entry_script_tags('app') }}
 			{% if user is defined %}
 				{{ encore_entry_script_tags('admin') }}
@@ -31,6 +38,7 @@
 			{{ include('layout/navbar.html.twig') }}
 		</header>
 		<main>
+			{% include './layout/messages.html.twig' %}
 			{% block body %}
 			{% endblock %}
 		</main>
